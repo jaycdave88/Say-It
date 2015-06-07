@@ -40,7 +40,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Sound Board" id="HI8-Oe-exs"/>
+                    <navigationItem key="navigationItem" title="My Sound Board" id="HI8-Oe-exs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ihX-ZC-4sE">
+                            <connections>
+                                <segue destination="455-SR-BMx" kind="presentation" id="T3C-rD-bJz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="f7t-0c-uoB" id="fus-Vo-oxF"/>
                     </connections>
@@ -48,6 +54,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-448" y="322"/>
+        </scene>
+        <!--New Sound View Contoller-->
+        <scene sceneID="7Wf-7C-Qo0">
+            <objects>
+                <viewController id="455-SR-BMx" customClass="newSoundViewContoller" customModule="My_Sound_Board" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cls-u1-OZe"/>
+                        <viewControllerLayoutGuide type="bottom" id="kAZ-4x-PMI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kSN-q9-X4r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zH8-ow-lMA">
+                                <rect key="frame" x="20" y="-82" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RZ2-7G-XhO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder=" Enter New Sound Name Here ! " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVV-fZ-3C1">
+                                <rect key="frame" x="20" y="64" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QJL-44-gkQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="VjA-vV-UEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXW-0T-bQ3">
+                                <rect key="frame" x="277" y="127" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yWq-NQ-o4P"/>
+                                </constraints>
+                                <state key="normal" title="RECORD">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-vq-4Y2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pUV-gi-FG3"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="New Sound" id="gOj-la-9iu">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rGs-3i-rts">
+                                            <connections>
+                                                <action selector="cancel:" destination="455-SR-BMx" id="gyP-8h-22j"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="dp7-wz-Z3v"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cXW-0T-bQ3" firstAttribute="leading" secondItem="kSN-q9-X4r" secondAttribute="leading" constant="20" id="1um-Bn-1WG"/>
+                            <constraint firstAttribute="trailing" secondItem="cXW-0T-bQ3" secondAttribute="trailing" constant="20" id="2h9-Av-ZqL"/>
+                            <constraint firstAttribute="trailing" secondItem="zH8-ow-lMA" secondAttribute="trailing" constant="20" id="E3p-j7-oSl"/>
+                            <constraint firstAttribute="trailing" secondItem="UVV-fZ-3C1" secondAttribute="trailing" constant="20" id="HWe-gy-k2W"/>
+                            <constraint firstItem="UVV-fZ-3C1" firstAttribute="leading" secondItem="kSN-q9-X4r" secondAttribute="leading" constant="20" id="Xgg-Yb-4jo"/>
+                            <constraint firstItem="zH8-ow-lMA" firstAttribute="leading" secondItem="kSN-q9-X4r" secondAttribute="leading" constant="20" id="bc8-33-0bQ"/>
+                            <constraint firstAttribute="trailing" secondItem="qCJ-vq-4Y2" secondAttribute="trailing" id="gXg-l0-kor"/>
+                            <constraint firstItem="qCJ-vq-4Y2" firstAttribute="leading" secondItem="kSN-q9-X4r" secondAttribute="leading" id="nRI-Oc-qOg"/>
+                            <constraint firstItem="UVV-fZ-3C1" firstAttribute="leading" secondItem="kSN-q9-X4r" secondAttribute="leading" constant="20" id="sjX-r8-gRB"/>
+                            <constraint firstItem="UVV-fZ-3C1" firstAttribute="top" secondItem="qCJ-vq-4Y2" secondAttribute="bottom" constant="20" id="tHa-lT-82W"/>
+                            <constraint firstItem="qCJ-vq-4Y2" firstAttribute="top" secondItem="kSN-q9-X4r" secondAttribute="top" id="uT6-xt-XCk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xq-kh-x27" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="322"/>
         </scene>
     </scenes>
 </document>

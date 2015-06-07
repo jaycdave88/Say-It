@@ -15,7 +15,7 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
     
     var audioPlayer = AVAudioPlayer() // creating an audio player property as the variable audioplayer
     
-    var sounds : [Sound] = [] // creating an array to hold all sounds, in swift you need to tell the array what it will be holding, this is done by ": [Sound]" this tells the array that it will contain Sound objects 
+    var sounds : [Sound] = [] // creating an array to hold all sounds, in swift you need to tell the array what it will be holding, this is done by ": [Sound]" this tells the array that it will contain Sound objects
 
     
     override func viewDidLoad() {
@@ -32,15 +32,21 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
         sound1.name = "testing" // providing a name
         sound1.URL = soundURL! // providing a sound URl
         
-        self.sounds.append(sound1)
+        var sound2 = Sound() // second object
+        sound2.name = "Bang"
+        sound2.URL = soundURL!
+        
+        self.sounds.append(sound1) // appending the first sound to list 
+        self.sounds.append(sound2) // appending the second sound to the list
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.sounds.count // # of rows we want the table view to have based on the contents of sounds array
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var sound = self.sounds[indexPath.row] // searches the index path of each row from the array of sounds and stores to the varibale sounds once it has the correct object
         var cell = UITableViewCell() // each cell on the table
-        cell.textLabel!.text = "Testing" // added text to the each cell
+        cell.textLabel!.text = sound.name // adds the correct name from each object to the correct row
         return cell // printing the new data into each cell
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

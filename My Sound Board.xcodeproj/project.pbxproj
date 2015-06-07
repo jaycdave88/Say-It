@@ -16,6 +16,7 @@
 		36DDC6141B24CAAD0026D075 /* My_Sound_BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC6131B24CAAD0026D075 /* My_Sound_BoardTests.swift */; };
 		36DDC6201B24E5220026D075 /* testing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 36DDC61F1B24E5220026D075 /* testing.m4a */; };
 		36DDC6221B24E8370026D075 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC6211B24E8370026D075 /* Sound.swift */; };
+		36DDC6241B25009E0026D075 /* NewSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC6231B25009E0026D075 /* NewSoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		36DDC6131B24CAAD0026D075 /* My_Sound_BoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Sound_BoardTests.swift; sourceTree = "<group>"; };
 		36DDC61F1B24E5220026D075 /* testing.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = testing.m4a; path = ../../testing.m4a; sourceTree = "<group>"; };
 		36DDC6211B24E8370026D075 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		36DDC6231B25009E0026D075 /* NewSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				36DDC61F1B24E5220026D075 /* testing.m4a */,
 				36DDC5FA1B24CAAD0026D075 /* AppDelegate.swift */,
 				36DDC5FF1B24CAAD0026D075 /* SoundListViewController.swift */,
+				36DDC6231B25009E0026D075 /* NewSoundViewController.swift */,
 				36DDC6011B24CAAD0026D075 /* Main.storyboard */,
 				36DDC6041B24CAAD0026D075 /* Images.xcassets */,
 				36DDC6061B24CAAD0026D075 /* LaunchScreen.xib */,
@@ -226,6 +229,7 @@
 				36DDC5FE1B24CAAD0026D075 /* My_Sound_Board.xcdatamodeld in Sources */,
 				36DDC5FB1B24CAAD0026D075 /* AppDelegate.swift in Sources */,
 				36DDC6221B24E8370026D075 /* Sound.swift in Sources */,
+				36DDC6241B25009E0026D075 /* NewSoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
