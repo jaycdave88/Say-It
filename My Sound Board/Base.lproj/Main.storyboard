@@ -76,7 +76,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Enter New Sound Name Here ! " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVV-fZ-3C1">
-                                <rect key="frame" x="20" y="64" width="560" height="30"/>
+                                <rect key="frame" x="20" y="94" width="560" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="QJL-44-gkQ"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="VjA-vV-UEe"/>
@@ -97,9 +97,9 @@
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-vq-4Y2">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="pUV-gi-FG3"/>
+                                    <constraint firstAttribute="height" constant="74" id="pUV-gi-FG3"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="New Sound" id="gOj-la-9iu">
