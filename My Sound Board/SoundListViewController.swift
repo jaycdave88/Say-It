@@ -21,6 +21,8 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         self.tableView.dataSource = self // added to make the Table view work
         self.tableView.delegate = self // added to make the Table view work
         
@@ -38,6 +40,9 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
         
         self.sounds.append(sound1) // appending the first sound to list 
         self.sounds.append(sound2) // appending the second sound to the list
+    }
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.reloadData() // always reloads
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,6 +63,11 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
         
         self.audioPlayer.play() // play audio command on click
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var nextViewController = segue.destinationViewController as! newSoundViewContoller
+       nextViewController.soundListViewController = self
     }
 
 }

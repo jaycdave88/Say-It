@@ -10,6 +10,9 @@ import UIKit
 
 class newSoundViewContoller : UIViewController{
     
+    @IBOutlet weak var soundTextName: UITextField!
+    
+    var soundListViewController = SoundListViewController()
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,4 +23,19 @@ class newSoundViewContoller : UIViewController{
         
     }
     
+    @IBAction func save(sender: AnyObject) {
+        
+        // first create a sound object
+        var sound = Sound()
+        sound.name = self.soundTextName.text
+        
+        // add that sound to the sound array
+        self.soundListViewController.sounds.append(sound)
+        
+        // dismiss this view controller 
+        
+        
+        
+        self.dismissViewControllerAnimated(true, completion: nil ) // dismiss
+    }
 }

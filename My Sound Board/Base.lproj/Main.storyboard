@@ -75,7 +75,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder=" Enter New Sound Name Here ! " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVV-fZ-3C1">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Enter New Sound Name Here ! " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVV-fZ-3C1">
                                 <rect key="frame" x="20" y="64" width="560" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="QJL-44-gkQ"/>
@@ -105,7 +105,11 @@
                                                 <action selector="cancel:" destination="455-SR-BMx" id="gyP-8h-22j"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="dp7-wz-Z3v"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="dp7-wz-Z3v">
+                                            <connections>
+                                                <action selector="save:" destination="455-SR-BMx" id="whh-7g-Hn4"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -125,6 +129,9 @@
                             <constraint firstItem="qCJ-vq-4Y2" firstAttribute="top" secondItem="kSN-q9-X4r" secondAttribute="top" id="uT6-xt-XCk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="soundTextName" destination="UVV-fZ-3C1" id="cLg-Sn-F6E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xq-kh-x27" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
