@@ -92,6 +92,9 @@
                                 <state key="normal" title="RECORD">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="record:" destination="455-SR-BMx" eventType="touchUpInside" id="QzR-pR-arg"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-vq-4Y2">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -130,6 +133,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="cXW-0T-bQ3" id="Mka-9S-gWM"/>
                         <outlet property="soundTextName" destination="UVV-fZ-3C1" id="cLg-Sn-F6E"/>
                     </connections>
                 </viewController>

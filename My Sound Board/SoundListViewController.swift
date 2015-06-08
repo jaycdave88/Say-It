@@ -55,11 +55,9 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
         return cell // printing the new data into each cell
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var soundPath = NSBundle.mainBundle().pathForResource("testing", ofType: "m4a")// where the file is located
+        var sound = self.sounds[indexPath.row]
         
-        var soundURL = NSURL.fileURLWithPath(soundPath!) // creates a url based on the path provided via sound path var
-        
-        self.audioPlayer = AVAudioPlayer(contentsOfURL: soundURL , error: nil) // play command while asking for where the audio lives
+        self.audioPlayer = AVAudioPlayer(contentsOfURL: sound.URL, error: nil) // play command while asking for where the audio lives
         
         self.audioPlayer.play() // play audio command on click
         
