@@ -68,9 +68,11 @@ class newSoundViewContoller : UIViewController{
         self.dismissViewControllerAnimated(true, completion: nil ) // dismiss
     }
     @IBAction func record(sender: AnyObject) {
+        
         if self.audioRecorder.recording{
             self.audioRecorder.stop() // if someone is already recording ... stop
-            self.recordButton.setTitle("RECORD", forState: UIControlState.Normal) // changing text to record
+            self.recordButton.setTitle("RECORD", forState: UIControlState.Normal)// changing text to record
+           
         } else {
             var sessions = AVAudioSession.sharedInstance() // if no one is recording start recording
             sessions.setActive(true, error: nil)
