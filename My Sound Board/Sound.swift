@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import CoreData
 
-class Sound{ // creating a object to have the two properties of name and URL
-    var name = "meow"
-    var URL = NSURL()
+class Sound: NSManagedObject {
+
+    @NSManaged var url: String
+    @NSManaged var name: String
+
 }
