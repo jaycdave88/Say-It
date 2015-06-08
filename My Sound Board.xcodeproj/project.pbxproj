@@ -14,7 +14,6 @@
 		36DDC6051B24CAAD0026D075 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36DDC6041B24CAAD0026D075 /* Images.xcassets */; };
 		36DDC6081B24CAAD0026D075 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DDC6061B24CAAD0026D075 /* LaunchScreen.xib */; };
 		36DDC6141B24CAAD0026D075 /* My_Sound_BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC6131B24CAAD0026D075 /* My_Sound_BoardTests.swift */; };
-		36DDC6201B24E5220026D075 /* testing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 36DDC61F1B24E5220026D075 /* testing.m4a */; };
 		36DDC6241B25009E0026D075 /* NewSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC6231B25009E0026D075 /* NewSoundViewController.swift */; };
 		36DDC6261B2521C20026D075 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC6251B2521C20026D075 /* Sound.swift */; };
 /* End PBXBuildFile section */
@@ -41,7 +40,6 @@
 		36DDC60D1B24CAAD0026D075 /* My Sound BoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Sound BoardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DDC6121B24CAAD0026D075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36DDC6131B24CAAD0026D075 /* My_Sound_BoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Sound_BoardTests.swift; sourceTree = "<group>"; };
-		36DDC61F1B24E5220026D075 /* testing.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = testing.m4a; path = ../../testing.m4a; sourceTree = "<group>"; };
 		36DDC6231B25009E0026D075 /* NewSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSoundViewController.swift; sourceTree = "<group>"; };
 		36DDC6251B2521C20026D075 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				36DDC6251B2521C20026D075 /* Sound.swift */,
-				36DDC61F1B24E5220026D075 /* testing.m4a */,
 				36DDC5FA1B24CAAD0026D075 /* AppDelegate.swift */,
 				36DDC5FF1B24CAAD0026D075 /* SoundListViewController.swift */,
 				36DDC6231B25009E0026D075 /* NewSoundViewController.swift */,
@@ -205,7 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36DDC6031B24CAAD0026D075 /* Main.storyboard in Resources */,
-				36DDC6201B24E5220026D075 /* testing.m4a in Resources */,
 				36DDC6081B24CAAD0026D075 /* LaunchScreen.xib in Resources */,
 				36DDC6051B24CAAD0026D075 /* Images.xcassets in Resources */,
 			);
@@ -427,6 +423,7 @@
 				36DDC6191B24CAAD0026D075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		36DDC61A1B24CAAD0026D075 /* Build configuration list for PBXNativeTarget "My Sound BoardTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +432,7 @@
 				36DDC61C1B24CAAD0026D075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
