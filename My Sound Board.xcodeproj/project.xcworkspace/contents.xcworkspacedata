@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/devmode/Desktop/CODE/My Sound Board/Say It!.xcodeproj">
+      location = "self:My Sound Board.xcodeproj">
    </FileRef>
 </Workspace>

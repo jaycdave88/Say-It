@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36DDC5F41B24CAAD0026D075"
-               BuildableName = "Say It!.app"
-               BlueprintName = "Say It!"
-               ReferencedContainer = "container:Say It!.xcodeproj">
+               BuildableName = "My Sound Board.app"
+               BlueprintName = "My Sound Board"
+               ReferencedContainer = "container:My Sound Board.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36DDC60C1B24CAAD0026D075"
-               BuildableName = "Say It!Tests.xctest"
-               BlueprintName = "Say It!Tests"
-               ReferencedContainer = "container:Say It!.xcodeproj">
+               BuildableName = "My Sound BoardTests.xctest"
+               BlueprintName = "My Sound BoardTests"
+               ReferencedContainer = "container:My Sound Board.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36DDC60C1B24CAAD0026D075"
-               BuildableName = "Say It!Tests.xctest"
-               BlueprintName = "Say It!Tests"
-               ReferencedContainer = "container:Say It!.xcodeproj">
+               BuildableName = "My Sound BoardTests.xctest"
+               BlueprintName = "My Sound BoardTests"
+               ReferencedContainer = "container:My Sound Board.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36DDC5F41B24CAAD0026D075"
-            BuildableName = "Say It!.app"
-            BlueprintName = "Say It!"
-            ReferencedContainer = "container:Say It!.xcodeproj">
+            BuildableName = "My Sound Board.app"
+            BlueprintName = "My Sound Board"
+            ReferencedContainer = "container:My Sound Board.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36DDC5F41B24CAAD0026D075"
-            BuildableName = "Say It!.app"
-            BlueprintName = "Say It!"
-            ReferencedContainer = "container:Say It!.xcodeproj">
+            BuildableName = "My Sound Board.app"
+            BlueprintName = "My Sound Board"
+            ReferencedContainer = "container:My Sound Board.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36DDC5F41B24CAAD0026D075"
-            BuildableName = "Say It!.app"
-            BlueprintName = "Say It!"
-            ReferencedContainer = "container:Say It!.xcodeproj">
+            BuildableName = "My Sound Board.app"
+            BlueprintName = "My Sound Board"
+            ReferencedContainer = "container:My Sound Board.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
