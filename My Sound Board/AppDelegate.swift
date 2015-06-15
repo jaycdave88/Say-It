@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()] // setting all text to white
+        
+        UIBarButtonItem.appearance().tintColor = UIColor.whiteColor()// show buttons as white
+        
+        let navBgImage:UIImage = UIImage(named: "back_nav.png")!
+        UINavigationBar.appearance().setBackgroundImage(navBgImage, forBarMetrics: .Default)
+
+    
         return true
     }
 
