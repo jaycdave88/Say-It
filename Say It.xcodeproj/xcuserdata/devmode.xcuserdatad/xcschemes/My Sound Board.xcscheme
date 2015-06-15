@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36DDC5F41B24CAAD0026D075"
                BuildableName = "My Sound Board.app"
-               BlueprintName = "My Sound Board"
-               ReferencedContainer = "container:My Sound Board.xcodeproj">
+               BlueprintName = "Say It"
+               ReferencedContainer = "container:Say It.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36DDC60C1B24CAAD0026D075"
                BuildableName = "My Sound BoardTests.xctest"
-               BlueprintName = "My Sound BoardTests"
-               ReferencedContainer = "container:My Sound Board.xcodeproj">
+               BlueprintName = "Say ItTests"
+               ReferencedContainer = "container:Say It.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,8 +48,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "36DDC60C1B24CAAD0026D075"
                BuildableName = "My Sound BoardTests.xctest"
-               BlueprintName = "My Sound BoardTests"
-               ReferencedContainer = "container:My Sound Board.xcodeproj">
+               BlueprintName = "Say ItTests"
+               ReferencedContainer = "container:Say It.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,8 +58,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36DDC5F41B24CAAD0026D075"
             BuildableName = "My Sound Board.app"
-            BlueprintName = "My Sound Board"
-            ReferencedContainer = "container:My Sound Board.xcodeproj">
+            BlueprintName = "Say It"
+            ReferencedContainer = "container:Say It.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -78,8 +78,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36DDC5F41B24CAAD0026D075"
             BuildableName = "My Sound Board.app"
-            BlueprintName = "My Sound Board"
-            ReferencedContainer = "container:My Sound Board.xcodeproj">
+            BlueprintName = "Say It"
+            ReferencedContainer = "container:Say It.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,8 +97,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "36DDC5F41B24CAAD0026D075"
             BuildableName = "My Sound Board.app"
-            BlueprintName = "My Sound Board"
-            ReferencedContainer = "container:My Sound Board.xcodeproj">
+            BlueprintName = "Say It"
+            ReferencedContainer = "container:Say It.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

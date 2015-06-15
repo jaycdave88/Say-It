@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QGl-Yl-A9U">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -20,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="-1190" y="322"/>
         </scene>
-        <!--My Sound Board-->
+        <!--Say It!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SoundListViewController" customModule="My_Sound_Board" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SoundListViewController" customModule="Say_It" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -39,7 +40,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Sound Board" id="HI8-Oe-exs">
+                    <navigationItem key="navigationItem" title="Say It!" id="HI8-Oe-exs">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ihX-ZC-4sE">
                             <connections>
                                 <segue destination="455-SR-BMx" kind="presentation" id="T3C-rD-bJz"/>
@@ -57,7 +58,7 @@
         <!--New Sound View Contoller-->
         <scene sceneID="7Wf-7C-Qo0">
             <objects>
-                <viewController id="455-SR-BMx" customClass="newSoundViewContoller" customModule="My_Sound_Board" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="455-SR-BMx" customClass="newSoundViewContoller" customModule="Say_It" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cls-u1-OZe"/>
                         <viewControllerLayoutGuide type="bottom" id="kAZ-4x-PMI"/>
@@ -83,15 +84,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXW-0T-bQ3">
-                                <rect key="frame" x="277" y="127" width="193" height="117"/>
-                                <state key="normal" title="RECORD" image="recordButton">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="record:" destination="455-SR-BMx" eventType="touchUpInside" id="QzR-pR-arg"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-vq-4Y2">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                 <constraints>
@@ -112,14 +104,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXW-0T-bQ3">
+                                <rect key="frame" x="238" y="132" width="193" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="7bZ-IW-4Oh"/>
+                                </constraints>
+                                <state key="normal" title="RECORD" image="recordButton">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="record:" destination="455-SR-BMx" eventType="touchUpInside" id="QzR-pR-arg"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.25199547442152559" green="0.35846756587036577" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="cXW-0T-bQ3" firstAttribute="leading" secondItem="kSN-q9-X4r" secondAttribute="leading" constant="20" id="1um-Bn-1WG"/>
                             <constraint firstAttribute="trailing" secondItem="cXW-0T-bQ3" secondAttribute="trailing" constant="20" id="2h9-Av-ZqL"/>
                             <constraint firstAttribute="trailing" secondItem="zH8-ow-lMA" secondAttribute="trailing" constant="20" id="E3p-j7-oSl"/>
                             <constraint firstAttribute="trailing" secondItem="UVV-fZ-3C1" secondAttribute="trailing" constant="20" id="HWe-gy-k2W"/>
+                            <constraint firstItem="cXW-0T-bQ3" firstAttribute="leading" secondItem="kSN-q9-X4r" secondAttribute="leadingMargin" constant="50" id="IBx-oD-tGp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cXW-0T-bQ3" secondAttribute="trailing" constant="50" id="QN3-9g-jwT"/>
                             <constraint firstItem="UVV-fZ-3C1" firstAttribute="leading" secondItem="kSN-q9-X4r" secondAttribute="leading" constant="20" id="Xgg-Yb-4jo"/>
                             <constraint firstItem="zH8-ow-lMA" firstAttribute="leading" secondItem="kSN-q9-X4r" secondAttribute="leading" constant="20" id="bc8-33-0bQ"/>
                             <constraint firstAttribute="trailing" secondItem="qCJ-vq-4Y2" secondAttribute="trailing" id="gXg-l0-kor"/>
