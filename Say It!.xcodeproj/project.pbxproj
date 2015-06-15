@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		36DDC5FB1B24CAAD0026D075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC5FA1B24CAAD0026D075 /* AppDelegate.swift */; };
-		36DDC5FE1B24CAAD0026D075 /* My_Sound_Board.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC5FC1B24CAAD0026D075 /* My_Sound_Board.xcdatamodeld */; };
+		36DDC5FE1B24CAAD0026D075 /* Say_It!.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC5FC1B24CAAD0026D075 /* Say_It!.xcdatamodeld */; };
 		36DDC6001B24CAAD0026D075 /* SoundListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC5FF1B24CAAD0026D075 /* SoundListViewController.swift */; };
 		36DDC6031B24CAAD0026D075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36DDC6011B24CAAD0026D075 /* Main.storyboard */; };
 		36DDC6051B24CAAD0026D075 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36DDC6041B24CAAD0026D075 /* Images.xcassets */; };
 		36DDC6081B24CAAD0026D075 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DDC6061B24CAAD0026D075 /* LaunchScreen.xib */; };
-		36DDC6141B24CAAD0026D075 /* My_Sound_BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC6131B24CAAD0026D075 /* My_Sound_BoardTests.swift */; };
+		36DDC6141B24CAAD0026D075 /* Say_It!.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC6131B24CAAD0026D075 /* Say_It!.swift */; };
 		36DDC6241B25009E0026D075 /* NewSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC6231B25009E0026D075 /* NewSoundViewController.swift */; };
 		36DDC6261B2521C20026D075 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC6251B2521C20026D075 /* Sound.swift */; };
 /* End PBXBuildFile section */
@@ -29,17 +29,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		36DDC5F51B24CAAD0026D075 /* My Sound Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Sound Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DDC5F51B24CAAD0026D075 /* Say It!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Say It!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DDC5F91B24CAAD0026D075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36DDC5FA1B24CAAD0026D075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36DDC5FD1B24CAAD0026D075 /* My_Sound_Board.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Sound_Board.xcdatamodel; sourceTree = "<group>"; };
+		36DDC5FD1B24CAAD0026D075 /* Say_It!.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Say_It!.xcdatamodel"; sourceTree = "<group>"; };
 		36DDC5FF1B24CAAD0026D075 /* SoundListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListViewController.swift; sourceTree = "<group>"; };
 		36DDC6021B24CAAD0026D075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36DDC6041B24CAAD0026D075 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		36DDC6071B24CAAD0026D075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		36DDC60D1B24CAAD0026D075 /* My Sound BoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Sound BoardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DDC60D1B24CAAD0026D075 /* Say It!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Say It!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DDC6121B24CAAD0026D075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36DDC6131B24CAAD0026D075 /* My_Sound_BoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Sound_BoardTests.swift; sourceTree = "<group>"; };
+		36DDC6131B24CAAD0026D075 /* Say_It!.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Say_It!.swift"; sourceTree = "<group>"; };
 		36DDC6231B25009E0026D075 /* NewSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSoundViewController.swift; sourceTree = "<group>"; };
 		36DDC6251B2521C20026D075 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,8 +65,8 @@
 		36DDC5EC1B24CAAD0026D075 = {
 			isa = PBXGroup;
 			children = (
-				36DDC5F71B24CAAD0026D075 /* My Sound Board */,
-				36DDC6101B24CAAD0026D075 /* My Sound BoardTests */,
+				36DDC5F71B24CAAD0026D075 /* Say It! */,
+				36DDC6101B24CAAD0026D075 /* Say It!Tests */,
 				36DDC5F61B24CAAD0026D075 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,13 +74,13 @@
 		36DDC5F61B24CAAD0026D075 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36DDC5F51B24CAAD0026D075 /* My Sound Board.app */,
-				36DDC60D1B24CAAD0026D075 /* My Sound BoardTests.xctest */,
+				36DDC5F51B24CAAD0026D075 /* Say It!.app */,
+				36DDC60D1B24CAAD0026D075 /* Say It!Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36DDC5F71B24CAAD0026D075 /* My Sound Board */ = {
+		36DDC5F71B24CAAD0026D075 /* Say It! */ = {
 			isa = PBXGroup;
 			children = (
 				36DDC6251B2521C20026D075 /* Sound.swift */,
@@ -90,9 +90,10 @@
 				36DDC6011B24CAAD0026D075 /* Main.storyboard */,
 				36DDC6041B24CAAD0026D075 /* Images.xcassets */,
 				36DDC6061B24CAAD0026D075 /* LaunchScreen.xib */,
-				36DDC5FC1B24CAAD0026D075 /* My_Sound_Board.xcdatamodeld */,
+				36DDC5FC1B24CAAD0026D075 /* Say_It!.xcdatamodeld */,
 				36DDC5F81B24CAAD0026D075 /* Supporting Files */,
 			);
+			name = "Say It!";
 			path = "My Sound Board";
 			sourceTree = "<group>";
 		};
@@ -104,12 +105,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		36DDC6101B24CAAD0026D075 /* My Sound BoardTests */ = {
+		36DDC6101B24CAAD0026D075 /* Say It!Tests */ = {
 			isa = PBXGroup;
 			children = (
-				36DDC6131B24CAAD0026D075 /* My_Sound_BoardTests.swift */,
+				36DDC6131B24CAAD0026D075 /* Say_It!.swift */,
 				36DDC6111B24CAAD0026D075 /* Supporting Files */,
 			);
+			name = "Say It!Tests";
 			path = "My Sound BoardTests";
 			sourceTree = "<group>";
 		};
@@ -124,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36DDC5F41B24CAAD0026D075 /* My Sound Board */ = {
+		36DDC5F41B24CAAD0026D075 /* Say It! */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36DDC6171B24CAAD0026D075 /* Build configuration list for PBXNativeTarget "My Sound Board" */;
+			buildConfigurationList = 36DDC6171B24CAAD0026D075 /* Build configuration list for PBXNativeTarget "Say It!" */;
 			buildPhases = (
 				36DDC5F11B24CAAD0026D075 /* Sources */,
 				36DDC5F21B24CAAD0026D075 /* Frameworks */,
@@ -136,14 +138,14 @@
 			);
 			dependencies = (
 			);
-			name = "My Sound Board";
+			name = "Say It!";
 			productName = "My Sound Board";
-			productReference = 36DDC5F51B24CAAD0026D075 /* My Sound Board.app */;
+			productReference = 36DDC5F51B24CAAD0026D075 /* Say It!.app */;
 			productType = "com.apple.product-type.application";
 		};
-		36DDC60C1B24CAAD0026D075 /* My Sound BoardTests */ = {
+		36DDC60C1B24CAAD0026D075 /* Say It!Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36DDC61A1B24CAAD0026D075 /* Build configuration list for PBXNativeTarget "My Sound BoardTests" */;
+			buildConfigurationList = 36DDC61A1B24CAAD0026D075 /* Build configuration list for PBXNativeTarget "Say It!Tests" */;
 			buildPhases = (
 				36DDC6091B24CAAD0026D075 /* Sources */,
 				36DDC60A1B24CAAD0026D075 /* Frameworks */,
@@ -154,9 +156,9 @@
 			dependencies = (
 				36DDC60F1B24CAAD0026D075 /* PBXTargetDependency */,
 			);
-			name = "My Sound BoardTests";
+			name = "Say It!Tests";
 			productName = "My Sound BoardTests";
-			productReference = 36DDC60D1B24CAAD0026D075 /* My Sound BoardTests.xctest */;
+			productReference = 36DDC60D1B24CAAD0026D075 /* Say It!Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -170,6 +172,7 @@
 				TargetAttributes = {
 					36DDC5F41B24CAAD0026D075 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 4QE8BY9B54;
 					};
 					36DDC60C1B24CAAD0026D075 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -177,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 36DDC5F01B24CAAD0026D075 /* Build configuration list for PBXProject "My Sound Board" */;
+			buildConfigurationList = 36DDC5F01B24CAAD0026D075 /* Build configuration list for PBXProject "Say It!" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -190,8 +193,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36DDC5F41B24CAAD0026D075 /* My Sound Board */,
-				36DDC60C1B24CAAD0026D075 /* My Sound BoardTests */,
+				36DDC5F41B24CAAD0026D075 /* Say It! */,
+				36DDC60C1B24CAAD0026D075 /* Say It!Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,7 +226,7 @@
 			files = (
 				36DDC6261B2521C20026D075 /* Sound.swift in Sources */,
 				36DDC6001B24CAAD0026D075 /* SoundListViewController.swift in Sources */,
-				36DDC5FE1B24CAAD0026D075 /* My_Sound_Board.xcdatamodeld in Sources */,
+				36DDC5FE1B24CAAD0026D075 /* Say_It!.xcdatamodeld in Sources */,
 				36DDC5FB1B24CAAD0026D075 /* AppDelegate.swift in Sources */,
 				36DDC6241B25009E0026D075 /* NewSoundViewController.swift in Sources */,
 			);
@@ -233,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36DDC6141B24CAAD0026D075 /* My_Sound_BoardTests.swift in Sources */,
+				36DDC6141B24CAAD0026D075 /* Say_It!.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +245,7 @@
 /* Begin PBXTargetDependency section */
 		36DDC60F1B24CAAD0026D075 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 36DDC5F41B24CAAD0026D075 /* My Sound Board */;
+			target = 36DDC5F41B24CAAD0026D075 /* Say It! */;
 			targetProxy = 36DDC60E1B24CAAD0026D075 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -354,9 +357,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "My Sound Board/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Say It!";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -364,9 +370,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "My Sound Board/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Say It!";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -384,8 +393,8 @@
 				);
 				INFOPLIST_FILE = "My Sound BoardTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Sound Board.app/My Sound Board";
+				PRODUCT_NAME = "Say It!Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Say It!.app/Say It!";
 			};
 			name = Debug;
 		};
@@ -399,15 +408,15 @@
 				);
 				INFOPLIST_FILE = "My Sound BoardTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Sound Board.app/My Sound Board";
+				PRODUCT_NAME = "Say It!Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Say It!.app/Say It!";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		36DDC5F01B24CAAD0026D075 /* Build configuration list for PBXProject "My Sound Board" */ = {
+		36DDC5F01B24CAAD0026D075 /* Build configuration list for PBXProject "Say It!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36DDC6151B24CAAD0026D075 /* Debug */,
@@ -416,7 +425,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36DDC6171B24CAAD0026D075 /* Build configuration list for PBXNativeTarget "My Sound Board" */ = {
+		36DDC6171B24CAAD0026D075 /* Build configuration list for PBXNativeTarget "Say It!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36DDC6181B24CAAD0026D075 /* Debug */,
@@ -425,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36DDC61A1B24CAAD0026D075 /* Build configuration list for PBXNativeTarget "My Sound BoardTests" */ = {
+		36DDC61A1B24CAAD0026D075 /* Build configuration list for PBXNativeTarget "Say It!Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				36DDC61B1B24CAAD0026D075 /* Debug */,
@@ -437,13 +446,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		36DDC5FC1B24CAAD0026D075 /* My_Sound_Board.xcdatamodeld */ = {
+		36DDC5FC1B24CAAD0026D075 /* Say_It!.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				36DDC5FD1B24CAAD0026D075 /* My_Sound_Board.xcdatamodel */,
+				36DDC5FD1B24CAAD0026D075 /* Say_It!.xcdatamodel */,
 			);
-			currentVersion = 36DDC5FD1B24CAAD0026D075 /* My_Sound_Board.xcdatamodel */;
-			path = My_Sound_Board.xcdatamodeld;
+			currentVersion = 36DDC5FD1B24CAAD0026D075 /* Say_It!.xcdatamodel */;
+			path = "Say_It!.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
