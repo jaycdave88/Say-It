@@ -86,19 +86,24 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     
-// NOT WORKING CODE
+// Delete row
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true;
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath ) {
+        var context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext!
+
         
         if (editingStyle == UITableViewCellEditingStyle.Delete){
+            
+            context.deleteObject(sounds[indexPath.row] as NSManagedObject) // deletes object
             sounds.removeAtIndex(indexPath.row) // removes data from index
+            context.save(nil) // saves the data
             
             self.tableView.reloadData()// updated table view
         }
-    }
+    } // end delete row
 
         override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var nextViewController = segue.destinationViewController as! newSoundViewContoller

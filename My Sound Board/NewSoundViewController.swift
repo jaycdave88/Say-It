@@ -38,6 +38,7 @@ class newSoundViewContoller : UIViewController{
     
     @IBOutlet weak var soundTextName: UITextField!
     @IBOutlet weak var recordButton: UIButton! // record button
+    @IBOutlet weak var textWord: UILabel! // label for user knowing
     
     var audioRecorder: AVAudioRecorder // creating a property that has the recorder
     var audioURL: String
@@ -70,14 +71,17 @@ class newSoundViewContoller : UIViewController{
     @IBAction func record(sender: AnyObject) {
         
         if self.audioRecorder.recording{
+            self.textWord.text = "Finished Recording!" // prints message to textWord label
             self.audioRecorder.stop() // if someone is already recording ... stop
-            self.recordButton.setTitle("RECORD", forState: UIControlState.Normal)// changing text to record
+//            self.recordButton.setTitle("RECORD", forState: UIControlState.Normal)// changing text to record
+            
            
         } else {
             var sessions = AVAudioSession.sharedInstance() // if no one is recording start recording
             sessions.setActive(true, error: nil)
+            self.textWord.text = "Recording ..."
             self.audioRecorder.record()
-            self.recordButton.setTitle("Finished Recording", forState: UIControlState.Normal) // changing text to finished recording
+          
         }
 
     }
