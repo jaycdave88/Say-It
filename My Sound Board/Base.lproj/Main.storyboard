@@ -33,12 +33,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="f7t-0c-uoB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="f7t-0c-uoB">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f7t-0c-uoB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="N1I-gE-H7b"/>
+                            <constraint firstItem="f7t-0c-uoB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QDb-we-uZx"/>
+                            <constraint firstAttribute="trailing" secondItem="f7t-0c-uoB" secondAttribute="trailing" id="kPh-SP-0gW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f7t-0c-uoB" secondAttribute="bottom" id="pIQ-dU-miV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Say It!" id="HI8-Oe-exs">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ihX-ZC-4sE">

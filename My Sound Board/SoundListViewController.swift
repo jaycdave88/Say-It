@@ -19,8 +19,8 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
     var audioPlayer = AVAudioPlayer() // creating an audio player property as the variable audioplayer
     
     var sounds : [Sound] = [] // creating an array to hold all sounds, in swift you need to tell the array what it will be holding, this is done by ": [Sound]" this tells the array that it will contain Sound objects
-
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -33,10 +33,13 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         // comment
+        
         var context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext!
         var request = NSFetchRequest(entityName: "Sound") // allows to go get all the objects stored in core data
         self.sounds = context.executeFetchRequest(request, error: nil)! as! [Sound]
         self.tableView.reloadData()
+        
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,7 +51,7 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
         var sound = self.sounds[indexPath.row] // searches the index path of each row from the array of sounds and stores to the varibale sounds once it has the correct object
         var cell = UITableViewCell() // each cell on the table
         cell.textLabel!.text = sound.name // adds the correct name from each object to the correct row
-        
+
         if(indexPath.row % 2 == 0){ // adding color to each cell
             cell.backgroundColor = UIColor.lightGrayColor()
             cell.textLabel?.textColor = UIColor.whiteColor()
@@ -72,15 +75,40 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
         
         self.audioPlayer = AVAudioPlayer(contentsOfURL: audioNSURL, error: nil) // play command while asking for where the audio lives
         
+        var session = AVAudioSession.sharedInstance();
+        
+        session.setCategory(AVAudioSessionCategoryAmbient, error: nil);
+        
         self.audioPlayer.play() // play audio command on click
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+    
+// NOT WORKING CODE
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true;
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath ) {
+        
+        if (editingStyle == UITableViewCellEditingStyle.Delete){
+            sounds.removeAtIndex(indexPath.row) // removes data from index
+            
+            self.tableView.reloadData()// updated table view
+        }
+    }
+
+        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var nextViewController = segue.destinationViewController as! newSoundViewContoller
         nextViewController.soundListViewController = self
+        
     }
+    
+    
+    
+    
     
 
 }
