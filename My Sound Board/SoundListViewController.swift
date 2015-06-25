@@ -19,7 +19,7 @@ class SoundListViewController: UIViewController, UITableViewDataSource, UITableV
     var audioPlayer = AVAudioPlayer() // creating an audio player property as the variable audioplayer
     
     var sounds : [Sound] = [] // creating an array to hold all sounds, in swift you need to tell the array what it will be holding, this is done by ": [Sound]" this tells the array that it will contain Sound objects
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
