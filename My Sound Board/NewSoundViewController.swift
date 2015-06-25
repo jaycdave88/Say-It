@@ -65,8 +65,8 @@ class newSoundViewContoller : UIViewController{
         // save sound to coredata
 
         if (sound.name == ""){
-            println("Sounds are still being saved")
             alertMessage()
+            
         }else {
             context.save(nil)
             // dismiss this view controller
