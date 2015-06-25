@@ -63,10 +63,16 @@ class newSoundViewContoller : UIViewController{
         sound.url = self.audioURL
         
         // save sound to coredata
-        context.save(nil)
-        
-        // dismiss this view controller
+
+        if (sound.name == ""){
+            println("Sounds are still being saved")
+            alertMessage()
+        }else {
+            context.save(nil)
+            // dismiss this view controller
         self.dismissViewControllerAnimated(true, completion: nil ) // dismiss
+        }
+
     }
     @IBAction func record(sender: AnyObject) {
         
@@ -84,5 +90,17 @@ class newSoundViewContoller : UIViewController{
           
         }
 
+    }
+
+    func alertMessage(){
+        let title = "Oops!"
+        let message = "Looks like you didn't add a name for your sound!"
+        let okayText = "OK"
+
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        let okayButton = UIAlertAction(title: okayText, style: UIAlertActionStyle.Cancel, handler: nil)
+
+        alert.addAction(okayButton)
+        presentViewController(alert, animated: true, completion: nil)
     }
 }

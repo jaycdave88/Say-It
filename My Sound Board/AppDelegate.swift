@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -23,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navBgImage:UIImage = UIImage(named: "back_nav.png")!
         UINavigationBar.appearance().setBackgroundImage(navBgImage, forBarMetrics: .Default)
-        
+
+        TestFairy.begin("5b50ca4b810c692b7f70416ad30baa3e5f502e76")
 
     
         return true

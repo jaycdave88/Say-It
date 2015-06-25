@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36A9D8A11B3C90AF00493F2C /* libTestFairy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9D89E1B3C90AF00493F2C /* libTestFairy.a */; };
+		36A9D8A21B3C90AF00493F2C /* upload-dsym.sh in Resources */ = {isa = PBXBuildFile; fileRef = 36A9D8A01B3C90AF00493F2C /* upload-dsym.sh */; };
+		36A9D8A41B3C92F500493F2C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9D8A31B3C92F500493F2C /* CoreMedia.framework */; };
+		36A9D8A61B3C930000493F2C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9D8A51B3C930000493F2C /* CoreMotion.framework */; };
+		36A9D8A81B3C930900493F2C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9D8A71B3C930900493F2C /* AVFoundation.framework */; };
+		36A9D8AA1B3C931400493F2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9D8A91B3C931400493F2C /* SystemConfiguration.framework */; };
+		36A9D8AC1B3C931D00493F2C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9D8AB1B3C931D00493F2C /* OpenGLES.framework */; };
 		36D6C5A81B32088100A3622A /* back_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 36D6C5A71B32088100A3622A /* back_nav.png */; };
 		36DDC5FB1B24CAAD0026D075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC5FA1B24CAAD0026D075 /* AppDelegate.swift */; };
 		36DDC5FE1B24CAAD0026D075 /* My_Sound_Board.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36DDC5FC1B24CAAD0026D075 /* My_Sound_Board.xcdatamodeld */; };
@@ -30,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36A9D89E1B3C90AF00493F2C /* libTestFairy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFairy.a; sourceTree = "<group>"; };
+		36A9D89F1B3C90AF00493F2C /* TestFairy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFairy.h; sourceTree = "<group>"; };
+		36A9D8A01B3C90AF00493F2C /* upload-dsym.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "upload-dsym.sh"; sourceTree = "<group>"; };
+		36A9D8A31B3C92F500493F2C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		36A9D8A51B3C930000493F2C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		36A9D8A71B3C930900493F2C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		36A9D8A91B3C931400493F2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		36A9D8AB1B3C931D00493F2C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		36A9D8AD1B3C943400493F2C /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
 		36D6C5A71B32088100A3622A /* back_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_nav.png; sourceTree = "<group>"; };
 		36DDC5F51B24CAAD0026D075 /* Say It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Say It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DDC5F91B24CAAD0026D075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +67,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A9D8AC1B3C931D00493F2C /* OpenGLES.framework in Frameworks */,
+				36A9D8AA1B3C931400493F2C /* SystemConfiguration.framework in Frameworks */,
+				36A9D8A81B3C930900493F2C /* AVFoundation.framework in Frameworks */,
+				36A9D8A61B3C930000493F2C /* CoreMotion.framework in Frameworks */,
+				36A9D8A41B3C92F500493F2C /* CoreMedia.framework in Frameworks */,
+				36A9D8A11B3C90AF00493F2C /* libTestFairy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +89,12 @@
 		36DDC5EC1B24CAAD0026D075 = {
 			isa = PBXGroup;
 			children = (
-				36DDC5F71B24CAAD0026D075 /* Say It! */,
+				36A9D8AB1B3C931D00493F2C /* OpenGLES.framework */,
+				36A9D8A91B3C931400493F2C /* SystemConfiguration.framework */,
+				36A9D8A71B3C930900493F2C /* AVFoundation.framework */,
+				36A9D8A51B3C930000493F2C /* CoreMotion.framework */,
+				36A9D8A31B3C92F500493F2C /* CoreMedia.framework */,
+				36DDC5F71B24CAAD0026D075 /* My Sound Board */,
 				36DDC6101B24CAAD0026D075 /* My Sound BoardTests */,
 				36DDC5F61B24CAAD0026D075 /* Products */,
 			);
@@ -82,9 +109,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36DDC5F71B24CAAD0026D075 /* Say It! */ = {
+		36DDC5F71B24CAAD0026D075 /* My Sound Board */ = {
 			isa = PBXGroup;
 			children = (
+				36A9D8AD1B3C943400493F2C /* Bridging.h */,
+				36A9D89E1B3C90AF00493F2C /* libTestFairy.a */,
+				36A9D89F1B3C90AF00493F2C /* TestFairy.h */,
+				36A9D8A01B3C90AF00493F2C /* upload-dsym.sh */,
 				36D6C5A71B32088100A3622A /* back_nav.png */,
 				36DDC6251B2521C20026D075 /* Sound.swift */,
 				36DDC5FA1B24CAAD0026D075 /* AppDelegate.swift */,
@@ -96,7 +127,6 @@
 				36DDC5FC1B24CAAD0026D075 /* My_Sound_Board.xcdatamodeld */,
 				36DDC5F81B24CAAD0026D075 /* Supporting Files */,
 			);
-			name = "Say It!";
 			path = "My Sound Board";
 			sourceTree = "<group>";
 		};
@@ -209,6 +239,7 @@
 				36DDC6031B24CAAD0026D075 /* Main.storyboard in Resources */,
 				36DDC6081B24CAAD0026D075 /* LaunchScreen.xib in Resources */,
 				36DDC6051B24CAAD0026D075 /* Images.xcassets in Resources */,
+				36A9D8A21B3C90AF00493F2C /* upload-dsym.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +392,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "My Sound Board/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/My",
+					Sound,
+					Board,
+				);
+				New_Setting = "";
 				PRODUCT_NAME = "Say It";
+				SWIFT_OBJC_BRIDGING_HEADER = "My Sound Board/Bridging.h";
 			};
 			name = Debug;
 		};
@@ -371,7 +410,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "My Sound Board/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/My",
+					Sound,
+					Board,
+				);
+				New_Setting = "";
 				PRODUCT_NAME = "Say It";
+				SWIFT_OBJC_BRIDGING_HEADER = "My Sound Board/Bridging.h";
 			};
 			name = Release;
 		};
