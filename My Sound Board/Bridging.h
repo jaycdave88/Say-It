@@ -10,6 +10,6 @@
 #define Say_It_Bridging_h
 
 #import "TestFairy.h"
-
+#import <QuartzCore/QuartzCore.h>
 
 #endif
